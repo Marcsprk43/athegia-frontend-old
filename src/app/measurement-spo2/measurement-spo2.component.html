@@ -1,6 +1,6 @@
-<div fxFlex 
+<div fxFlex class="dark-style"
 fxLayout="column">
-<mat-card class="spo2-format" 
+<mat-card class="spo2-format" style="background: rgb(0, 0, 0)"
     fxFill
     fxLayout="column"
     fxLayoutAlign="space-around stretch">
@@ -9,19 +9,19 @@ fxLayout="column">
         fxFlex 
         fxLayout="column" 
         fxLayoutAlign="space-around stretch"
-        fxLayoutGap="5px" style="background: rgb(255, 255, 255)"
+        fxLayoutGap="5px" style="background: rgb(0, 0, 0)"
         fxFill>
         <div fxFlex>
-            <mat-card-title>Oxygen Saturation</mat-card-title>
+            <mat-card-title class="dark-style">Oxygen Saturation</mat-card-title>
         </div>
         <div fxFlex>
             <div  
-                fxLayout="row"   
+                fxLayout="row"
                 fxLayoutAlign="space-around stretch"
                 fxFlex>
-            <div fxFlex="25" style="background: blue; margin: 5px" >SPO2</div>
-            <div fxFlex="50" style="background: yellow; margin: 5px; font-size: 60px;">99</div>
-            <div fxFlex="25" style="background: yellow; margin: 5px">%</div>
+            <div fxFlex="25" class="metric-name" >SPO2</div>
+            <div fxFlex="50" class="metric-value">99</div>
+            <div fxFlex="25" class="metric-unit">%</div>
           </div>
         </div>
 
@@ -30,14 +30,14 @@ fxLayout="column">
                 fxLayout="row"   
                 fxLayoutAlign="space-around stretch"
                 fxFlex>
-            <div fxFlex="25" style="background: blue; margin: 5px" >Pulse</div>
-            <div fxFlex="50" style="background: yellow; margin: 5px; font-size: 60px;">72</div>
-            <div fxFlex="25" style="background: yellow; margin: 5px">bpm</div>
+            <div fxFlex="25" class="metric-name" >Pulse</div>
+            <div fxFlex="50" class="metric-value">72</div>
+            <div fxFlex="25" class="metric-unit">bpm</div>
           </div>
         </div>
         <div fxFlex="15%">
             <mat-card-actions>
-                <p>Status Line - The sensor status goes here</p>
+                <p class="status-line">Status Line - The sensor status goes here</p>
               </mat-card-actions>
         </div>
 

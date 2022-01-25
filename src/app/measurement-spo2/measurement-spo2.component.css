@@ -1,3 +1,42 @@
 .spo2-format {
     height:max-content;
 }
+
+.dark-style {
+    color:white;
+    background-color: black;
+}
+
+.metric-name {
+    font-size: 15px;
+    color: white;
+    margin: 2px;
+    background-color: black;
+    text-align: right;
+}
+
+.metric-unit {
+    font-size: 10px;
+    color: white;
+    margin: 2px;
+    background-color: black;
+    text-align: left;
+}
+
+.metric-value {
+    font-size: 60px;
+    color: white;
+    margin: 15px;
+    background-color: black;
+    text-align: right;
+
+}
+
+.status-line {
+    font-size: 10px;
+    color: rgb(87, 86, 86);
+    margin: 2px;
+    background-color: black;
+    text-align: left;
+
+}
