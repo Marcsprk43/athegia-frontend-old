@@ -24,9 +24,9 @@
 }
 
 .metric-value {
-    font-size: 60px;
+    font-size: 50px;
     color: white;
-    margin: 15px;
+    margin: 8px;
     background-color: black;
     text-align: right;
 
@@ -39,4 +39,11 @@
     background-color: black;
     text-align: left;
 
+}
+
+.page-heading {
+    color: orange;
+    font-style: bold;
+    font-size: 40;
+    margin:0;
 }

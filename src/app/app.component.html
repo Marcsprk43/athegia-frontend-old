@@ -6,44 +6,50 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<div class='raspi-screen'>
+<div class='raspi-screen' >
 
-
-<div 
-fxFlex 
-fxLayout="column" 
-fxLayoutAlign="space-around stretch"
-fxLayoutGap="5px" style="background: rgb(49, 48, 48)"
-fxFill>
-
-<div fxFlex='15%'>
-	<div  
-  fxLayout="row"   
+  <!-- Start by creating a column divider-->
+  <div 
+  fxFlex 
+  fxLayout="column" 
   fxLayoutAlign="space-around stretch"
-  fxFlex>
-    <div fxFlex style="background: blue; margin: 5px" >Athegia Measurements</div>
+  fxLayoutGap="5px" style="background: rgb(49, 48, 48)"
+  fxFill>
+
+    <!-- Creating the header-->
+    <div fxFlex='10%' class="page-heading">
+      <div fxFlex 
+      fxLayout="row"   
+      fxLayoutAlign="space-around stretch"
+      >
+        <div class="page-heading">Athegia Measurements</div>
+      </div>
+    </div>
+    <!-- Creating the first row-->
+    <div fxFlex="45%">
+      <div  fxFlex
+      fxLayout="row"   
+      fxLayoutAlign="space-around stretch"
+      >
+        <div fxFlex="50" style="background: blue; margin: 5px" >
+          <app-measurement-spo2></app-measurement-spo2>
+        </div>
+        <div fxFlex="50" style="background: yellow; margin: 5px">
+          two
+        </div>
+      </div>
+    </div>
+
+  <div fxFlex="45%">
+    <div  fxLayout="row"  
+    fxLayoutAlign="space-around stretch"
+    fxFlex>
+
+      <div fxFlex="50" style="background: blue; margin: 5px" >one</div>
+      <div fxFlex="50" style="background: yellow; margin: 5px">two</div>
+    </div>
   </div>
-</div>
-
-<div fxFlex>
-	<div  
-  fxLayout="row"   
-  fxLayoutAlign="space-around stretch"
-  fxFlex>
-    <div fxFlex="50" style="background: blue; margin: 5px" ><app-measurement-spo2></app-measurement-spo2></div>
-    <div fxFlex="50" style="background: yellow; margin: 5px">two</div>
-  </div>
-</div>
-<div fxFlex>
-  <div  fxLayout="row"  
-  fxLayoutAlign="space-around stretch"
-  fxFlex>
-
-    <div fxFlex="50" style="background: blue; margin: 5px" >one</div>
-    <div fxFlex="50" style="background: yellow; margin: 5px">two</div>
-  </div>
-</div>
 
 
-</div> 
+  </div> 
 </div>
