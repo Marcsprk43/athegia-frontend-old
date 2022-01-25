@@ -1,0 +1,49 @@
+<div fxFlex 
+fxLayout="column">
+<mat-card class="spo2-format" 
+    fxFill
+    fxLayout="column"
+    fxLayoutAlign="space-around stretch">
+    
+    <div 
+        fxFlex 
+        fxLayout="column" 
+        fxLayoutAlign="space-around stretch"
+        fxLayoutGap="5px" style="background: rgb(255, 255, 255)"
+        fxFill>
+        <div fxFlex>
+            <mat-card-title>Oxygen Saturation</mat-card-title>
+        </div>
+        <div fxFlex>
+            <div  
+                fxLayout="row"   
+                fxLayoutAlign="space-around stretch"
+                fxFlex>
+            <div fxFlex="25" style="background: blue; margin: 5px" >SPO2</div>
+            <div fxFlex="50" style="background: yellow; margin: 5px; font-size: 60px;">99</div>
+            <div fxFlex="25" style="background: yellow; margin: 5px">%</div>
+          </div>
+        </div>
+
+        <div fxFlex>
+            <div  
+                fxLayout="row"   
+                fxLayoutAlign="space-around stretch"
+                fxFlex>
+            <div fxFlex="25" style="background: blue; margin: 5px" >Pulse</div>
+            <div fxFlex="50" style="background: yellow; margin: 5px; font-size: 60px;">72</div>
+            <div fxFlex="25" style="background: yellow; margin: 5px">bpm</div>
+          </div>
+        </div>
+        <div fxFlex="15%">
+            <mat-card-actions>
+                <p>Status Line - The sensor status goes here</p>
+              </mat-card-actions>
+        </div>
+
+    </div>
+
+
+
+</mat-card>
+</div>
