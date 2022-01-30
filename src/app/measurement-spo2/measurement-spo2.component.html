@@ -1,18 +1,18 @@
-<div fxFlex class="dark-style"
+<div fxFlex class="dark-style spo2 disconnected"
 fxLayout="column">
-<mat-card class="spo2-format" style="background: rgb(0, 0, 0)"
+<mat-card class="spo2-format spo2 disconnected"
     fxFill
     fxLayout="column"
     fxLayoutAlign="space-around stretch">
     
-    <div 
+    <div class = 'spo2-format spo2 disconnected'
         fxFlex 
         fxLayout="column" 
         fxLayoutAlign="space-around stretch"
-        fxLayoutGap="5px" style="background: rgb(0, 0, 0)"
+        fxLayoutGap="5px"
         fxFill>
         <div fxFlex>
-            <mat-card-title class="dark-style">Oxygen Saturation</mat-card-title>
+            <mat-card-title class="dark-style spo2 disconnected">Oxygen Saturation</mat-card-title>
         </div>
         <div fxFlex>
             <div  
@@ -20,7 +20,7 @@ fxLayout="column">
                 fxLayoutAlign="space-around stretch"
                 fxFlex>
                 <div fxFlex="33" class="metric-name" >SPO2</div>
-                <div fxFlex="33" class="metric-value">99</div>
+                <div fxFlex="33" class="metric-value"*ngIf='deviceData'>{{this.deviceData.dataOne}}</div>
                 <div fxFlex="33" class="metric-unit">%</div>
           </div>
         </div>
@@ -31,13 +31,13 @@ fxLayout="column">
                 fxLayoutAlign="space-around stretch"
                 fxFlex>
             <div fxFlex="33" class="metric-name" >Pulse</div>
-            <div fxFlex="33" class="metric-value">72</div>
+            <div fxFlex="33" class="metric-value"*ngIf='deviceData'>{{this.deviceData.dataTwo}}</div>
             <div fxFlex="33" class="metric-unit">bpm</div>
           </div>
         </div>
         <div fxFlex="8%">
             <mat-card-actions>
-                <p class="status-line">Status Line - The sensor status goes here</p>
+                <p class="status-line"*ngIf='deviceData'>{{this.deviceData.status}}</p>
               </mat-card-actions>
         </div>
 

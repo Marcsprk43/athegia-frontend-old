@@ -1,11 +1,3 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div class='raspi-screen' >
 
   <!-- Start by creating a column divider-->
@@ -21,8 +13,8 @@
       <div fxFlex 
       fxLayout="row"   
       fxLayoutAlign="space-around stretch"
-      >
-        <div class="page-heading">Athegia Measurements</div>
+      >        <div class="page-heading">Athegia Measurements</div>
+
       </div>
     </div>
     <!-- Creating the first row-->
@@ -35,7 +27,7 @@
           <app-measurement-spo2></app-measurement-spo2>
         </div>
         <div fxFlex="50" style="background: yellow; margin: 5px">
-          two
+          <app-measurement-bp></app-measurement-bp>
         </div>
       </div>
     </div>
@@ -45,8 +37,12 @@
     fxLayoutAlign="space-around stretch"
     fxFlex>
 
-      <div fxFlex="50" style="background: blue; margin: 5px" >one</div>
-      <div fxFlex="50" style="background: yellow; margin: 5px">two</div>
+      <div fxFlex="50" style="background: blue; margin: 5px" >
+        <app-measurement-temp></app-measurement-temp>
+      </div>
+      <div fxFlex="50" style="background: yellow; margin: 5px">
+        <app-measurement-scale></app-measurement-scale>
+      </div>
     </div>
   </div>
 
